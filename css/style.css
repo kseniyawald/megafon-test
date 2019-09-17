@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Graphik-Medium';
+  src: url(fonts/Graphik-Medium.ttf) format('truetype'),
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+body {
+  width: 70vw;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.about {
+  background-color: #00B956;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.ruble {
+  color: #00B956;
+}
+
+.number {
+  font-size: 30px;
+  text-align: center;
+}
+
+.big-number {
+  font-size: 46px;
+}
+
+.number_text {
+  text-align: center;
+  font-size: 18px;
+}
+
+.horizontal-click [name="vkl"] { display: none; }
+.horizontal-click > :not(input):not(label) {
+  overflow: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0 .5em;
+  border: 1px solid #ffffff;
+  border-top-style: none;
+  transition: .5s;
+}
+.horizontal-click > label {
+  overflow: hidden;
+  display: block;
+  padding: .5em 1em;
+  background: #00B956;
+  color: #ffffff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  width: 600px;
+  height: 30px;
+}
+.horizontal-click > :checked + label + * {
+  overflow: auto;
+  height: 310px;
+}
+.horizontal-click > :checked + label {
+  background: #00B956;
+  cursor: default;
+}
+
+
+a {
+  text-decoration: none;
+  color: #00B956;
+}
+.answer {
+  padding-top: 10px;
+}
+
+.command {
+  font-size: 20px;
+  font-weight: bold;
+
+}
